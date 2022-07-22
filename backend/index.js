@@ -12,6 +12,12 @@ const cors = require("cors");
 
 dotenv.config();
 
+const PORT = process.env.PORT || 5000;
+
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({ path: "backend/.env" });
+}
+
 mongoose
   .connect(process.env.DB_URI)
   .then(() => {
@@ -30,6 +36,12 @@ app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
 
-app.listen(5000, () => {
-  console.log(`server is running at localhost:${5000}`);
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+});
+
+app.listen(PORT, () => {
+  console.log(`server is running at localhost:${PORT}`);
 });
