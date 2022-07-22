@@ -1,0 +1,8 @@
+.loader{
+    background-image: url("./Loader.gif");
+    height: 100vh;
+    width: 100vw;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

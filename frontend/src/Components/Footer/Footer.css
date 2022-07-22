@@ -1,0 +1,94 @@
+.footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  padding: 1em 0;
+  height: 250px;
+  /* background-color: lightgray; */
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+  gap: 1em;
+  /* text-align: center; */
+}
+
+.footer_info p {
+  width: 90%;
+  font-size: 1.1em;
+}
+
+.footer_info_logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+/* padding: 0.5em; */
+
+.footer_info_logo img {
+  border-radius: 50%;
+  height: 70px;
+}
+.footer_info_logo div {
+  font-size: 1.4em;
+}
+
+.footer_socialIcons {
+  display: flex;
+  gap: 1em;
+}
+
+.footer_socialIcons .MuiSvgIcon-root {
+  font-size: 2.3em;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  padding: 0.2em;
+}
+
+.footer_usefulLinks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+}
+
+.footer_usefulLinks .footer_links {
+  display: flex;
+  gap: 2em;
+}
+
+.footer_usefulLinks .footer_links div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.footer_usefulLinks .footer_links a {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+}
+
+.footer_contact {
+  padding: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.footer_contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.footer_contact_info div {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}

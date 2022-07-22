@@ -1,0 +1,114 @@
+.productPage {
+  display: flex;
+  margin: 1em 0;
+  /* gap: 2em; */
+  /* justify-content: center; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.productPage_img {
+  flex: 1;
+}
+
+.productPage img {
+  height: 80vh;
+}
+
+.productPage_info {
+  /* width: 50vw; */
+  flex: 2;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-left: 4em;
+}
+
+.productPage_title {
+  font-size: 2em;
+  margin: 0.6em 0;
+  color: rgb(79, 79, 79);
+}
+
+.productPage_desc {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: rgb(79, 79, 79);
+}
+
+.productPage_price {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.productPage_filters {
+  font-size: 1.2em;
+  color: rgb(79, 79, 79);
+  display: flex;
+  margin: 1em 0;
+}
+
+.color_filter {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-right: 4em;
+}
+
+.color_filter .color_box {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.selected{
+  border: 2px solid black !important;
+}
+
+.productPage_filters select {
+  padding: 0.3em;
+}
+
+.productPage_last {
+  display: flex;
+  gap: 3em;
+  margin: 2em 0;
+  align-items: center;
+}
+
+.productPage_last .quantity {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid gray; */
+}
+.productPage_last .quantity div {
+  padding: 0.2em 0.7em;
+}
+
+.productPage_last .quantity button {
+  color: white;
+  background-color: teal;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  border: 1px solid teal;
+}
+
+.productPage_last .addtocart {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: all 0.4s;
+  border: 1px solid teal;
+}
+.productPage_last .addtocart:hover {
+  border: 1px solid teal;
+  background-color: white;
+  color: teal;
+}
