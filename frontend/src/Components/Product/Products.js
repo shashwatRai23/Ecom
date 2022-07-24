@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./Product.css";
 import Product from "./Product";
-import axios from "axios";
 import { publicRequest } from "../../requestMethods";
 
 const Products = ({ category, filters, sort }) => {
