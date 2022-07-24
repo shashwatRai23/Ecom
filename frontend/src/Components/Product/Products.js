@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import "./Product.css";
 import Product from "./Product";
 import axios from "axios";
+import { publicRequest } from "../../requestMethods";
 
 const Products = ({ category, filters, sort }) => {
   const [products, setProducts] = useState([]);
@@ -10,10 +11,10 @@ const Products = ({ category, filters, sort }) => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get(
+        const res = await publicRequest.get(
           category
-            ? "http://localhost:5000/api/products"
-            : "http://localhost:5000/api/products"
+            ? "/products"
+            : "/products"
         );
         setProducts(res.data);
       } catch (err) {
